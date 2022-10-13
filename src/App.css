@@ -122,6 +122,7 @@
   display: flex;
   justify-content: space-around;
   gap: 1.5em;
+  column-gap: 2.5em;
   color: #ecf8f8;
   text-align: left;
 }
