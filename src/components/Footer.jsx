@@ -4,20 +4,20 @@ export default function Footer() {
     return(
         <div className="footer">
             <div className="footer__text">
-                <div className="footer__text_1">
+                <div className="footer__text_1 f-text">
                     <h2>NÁJDETE NÁS:</h2>
                     <p>
                         Slnečnicová 1, Rovinka
                     </p>
                 </div>
-                <div className="footer__text_2">
+                <div className="footer__text_2 f-text">
                     <h2>OTVÁRACIE HODINY:</h2>
                     <p>Po-Št:	11:00 - 22:00</p>
                     <p>Pia-So:	11:00 - 23:00</p>
                     <p>Ne:	11:00 - 22:00</p>
                     
                 </div>
-                <div className="footer__text_3">
+                <div className="footer__text_3 f-text">
                     <h2>KONTAKTUJTE NÁS:</h2>
                     <p>Mail:	info@afpizza.sk</p>
                     <p>Tel.:	0911 390 123</p>
