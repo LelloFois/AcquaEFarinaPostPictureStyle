@@ -103,8 +103,8 @@
 /** For mobile devices **/
 @media (max-width: 767px) {
   .bottom-wave svg {
-    width: calc(224% + 1.3px);
-    height: 246px;
+    width: calc(300% + 1.3px);
+    height: 296px;
   }
 }
 
@@ -129,11 +129,11 @@
 }
 
 .footer__text h2 {
-  font-size: 0.5em;
+  font-size: 0.7em;
 }
 
 .footer__text p {
-  font-size: 0.4em;
+  font-size: 0.6em;
   line-height: 1.5em;
 }
 
