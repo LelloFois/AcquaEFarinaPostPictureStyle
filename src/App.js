@@ -1,14 +1,27 @@
 import './App.css';
 // import html2canvas from 'html2canvas';
-import Form from './components/Form';
-import Footer from './components/Footer';
+import Form from './components/Form'
+import PictureLayout from './components/PictureLayout';
+import { useState, useEffect } from 'react';
 
 
 function App() {
+  const [input, setInput] = useState();
+
+  // useEffect(() => {
+  //   input()
+  // })
+  console.log(input)
+
   return (
     <div className="App">
-      <Form />
-      <Footer />
+      <Form setInput= { setInput }/>
+      
+
+      <div className='pic_layout'>
+        <PictureLayout picture= { input } />
+      </div>
+      
     </div>
   );
 }

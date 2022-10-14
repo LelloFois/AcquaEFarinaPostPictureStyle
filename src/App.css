@@ -145,6 +145,37 @@
   margin: 0 0.5rem;
 }
 
+.form {
+  position: relative;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  background: #ecf8f8;
+}
+
+.picture_input {
+  width: 0.1px;
+  height: 0.1px;
+  opacity: 0;
+  overflow: hidden;
+  position: absolute;
+  z-index: -1;
+}
+
+.picture_input + label {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.25em;
+  color: white;
+  background-color: rgb(255, 0, 0);
+  display: inline-block;
+  cursor: pointer;
+  padding: 0 1em;
+}
+
+.picture_input + label:hover {
+  background-color: rgba(255, 0, 0, 0.5);
+}
+
 @media (min-width: 500px) {
   .footer {
     margin: 1rem 5rem;
