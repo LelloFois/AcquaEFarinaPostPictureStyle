@@ -10,6 +10,13 @@
 
 .App {
   text-align: center;
+  width: 100vw;
+  height: 100vh;
+}
+
+.pic_layout {
+  width: 100vw;
+  height: 100vh;
 }
 
 .bg-image {
@@ -36,6 +43,21 @@
   bottom: 0;
   z-index: 3;
   margin: auto;
+}
+
+.picture_input {
+  width: 5rem;
+  height: 5rem;
+  opacity: 0;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  margin: 3rem auto;
+  z-index: 4;
+  cursor: pointer;
 }
 
 .circle {
@@ -153,16 +175,7 @@
   background: #ecf8f8;
 }
 
-.picture_input {
-  width: 0.1px;
-  height: 0.1px;
-  opacity: 0;
-  overflow: hidden;
-  position: absolute;
-  z-index: -1;
-}
-
-.picture_input + label {
+/* .picture_input + label {
   font-family: "Montserrat", sans-serif;
   font-size: 1.25em;
   color: white;
@@ -174,7 +187,7 @@
 
 .picture_input + label:hover {
   background-color: rgba(255, 0, 0, 0.5);
-}
+} */
 
 @media (min-width: 500px) {
   .footer {
@@ -187,4 +200,9 @@
   .footer__text p {
     font-size: 0.9em;
   }
+}
+
+canvas {
+  max-width: 100%;
+  max-height: 100%;
 }

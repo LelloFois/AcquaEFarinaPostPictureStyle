@@ -2,8 +2,8 @@ import logo  from '../images/acqua-logo.svg'
 import defaultPic from '../images/pizza.jpg'
 import Footer from './Footer'
 
-export default function PictureLayout({ picture }) {
-    console.log(picture)
+export default function PictureLayout({ picture,imageUpload }) {
+  
     return(
         <>
             <div className="picture-layout">
@@ -12,6 +12,14 @@ export default function PictureLayout({ picture }) {
                 </div>
                 <div className="title">
                     <h1><img src={ logo } alt="Logo" className='header_logo'/></h1>
+                    <input 
+                        type="file" 
+                        id="file" 
+                        name="file"
+                        accept="image/png, image/jpeg" 
+                        className='picture_input' 
+                        onChange = { (e) => imageUpload(e)
+                    }/>
                     <div className='circle'></div>
                     <div className="split">
                         <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
